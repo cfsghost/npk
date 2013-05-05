@@ -1,0 +1,32 @@
+{
+  "name": "npk",
+  "version": "0.0.1",
+  "description": "Node.js packaging utility",
+  "keywords": [
+    "database",
+    "api"
+  ],
+  "homepage": "https://github.com/cfsghost/npk",
+  "author": {
+    "name": "Fred Chien(錢逢祥)",
+    "email": "fred@mandice.com",
+    "web": "http://fred-zone.blogspot.com/"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:cfsghost/npk.git"
+  },
+  "directories": {
+    "tests": "lib"
+  },
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "dependencies": {
+    "nld": "~0.5.0"
+  },
+  "bin": {
+    "npk": "./bin/npk"
+  }
+}
