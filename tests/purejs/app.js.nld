@@ -1,0 +1,5 @@
+
+var A = module.exports = require('./lib/a.js');
+
+//console.log(bundle('./a.js'));
+//bundle();
