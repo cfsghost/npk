@@ -4,6 +4,6 @@ var NPK = require('../lib/npk');
 
 var npk = new NPK();
 
-npk.open(process.argv[2], function(err, data) {
-	console.log(data);
+npk.open(process.argv[2], function(err) {
+	npk.link();
 });
