@@ -1,4 +1,5 @@
 var App = require('./app.js');
 
-console.log(App);
+//var A = App('a.js');
+App();
 //App('b.js', false);
