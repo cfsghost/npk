@@ -24,7 +24,8 @@
     "node": ">= 0.8.0"
   },
   "dependencies": {
-    "nld": "~0.5.0"
+    "nld": "~0.5.0",
+    "node-array": "0.0.6"
   },
   "bin": {
     "npk": "./bin/npk"

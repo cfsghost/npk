@@ -3,13 +3,16 @@
   "version": "0.0.1",
   "description": "testcase with pure javascript files",
   "npk_target": {
-    "app.js": {
-      "type": "main",
+    "api.js": {
+      "type": "module",
 	  "sources": [
 	    "lib/a.js",
 	    "lib/b.js",
 	    "lib/c.js"
-	  ]
+	  ],
+      "data": [
+        "data/data.txt"
+      ]
 	}
   }
 }
