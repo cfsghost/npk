@@ -9,3 +9,5 @@ var A = module.exports = function() {
 	console.log(__dirname);
 	console.log(x);
 };
+
+console.log('Entry point!');
