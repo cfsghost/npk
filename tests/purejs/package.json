@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "testcase with pure javascript files",
   "npk_target": {
-    "api.js": {
+    "app.js": {
 	  "sources": [
 	    "lib/a.js",
 	    "lib/b.js",
