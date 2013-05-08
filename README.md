@@ -12,11 +12,15 @@ Install NPK globally via NPM:
 
 Using command to package your project:
 
-    npk /home/fred/myproject
+    npk tests/purejs/
 
 Then you can find out the package in there:
 
-    /home/fred/myproject/out
+    tests/purejs/out/app.js/
+
+You can run packaged application directly:
+
+    node tests/purejs/out/app.js/app.js
 
 License
 -
