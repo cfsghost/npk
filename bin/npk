@@ -4,8 +4,27 @@ var NPK = require('../lib/npk');
 
 var npk = new NPK();
 
+// Print usage of NPK
+if (process.argv.length == 2) {
+	console.log('Usage: npk [source path] [options]');
+	process.exit();
+}
+
 npk.open(process.argv[2], function(err) {
-	npk.processAll({}, function() {
+	var opts = {};
+
+	if (process.argv[3]) {
+		switch(process.argv[3]) {
+		case '-remove-mockup':
+			break;
+		case '-mom-doesnt-recognize':
+			break;
+		case '-dad-doesnt-recognize':
+			break;
+		}
+	}
+
+	npk.processAll(opts, function() {
 		console.log('Finished.');
 	});
 });
