@@ -11,15 +11,20 @@ if (process.argv.length == 2) {
 }
 
 npk.open(process.argv[2], function(err) {
-	var opts = {};
+	var opts = {
+		level: 1
+	};
 
 	if (process.argv[3]) {
 		switch(process.argv[3]) {
-		case '-remove-mockup':
+		case '--remove-mockup':
+			opts.level = 1;
 			break;
-		case '-mom-doesnt-recognize':
+		case '--mom-doesnt-recognize':
+			opts.level = 2;
 			break;
-		case '-dad-doesnt-recognize':
+		case '--dad-doesnt-recognize':
+			opts.level = 3;
 			break;
 		}
 	}
