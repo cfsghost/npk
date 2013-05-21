@@ -22,6 +22,25 @@ You can run packaged application directly:
 
     node tests/purejs/out/app.js/app.js
 
+Three levels for packaging
+-
+
+__Remove Mock-up (default)__
+
+    npk [project path]
+
+__Mom doesn't recognize__
+
+    npk [project path] --mom-doesnt-recognize
+
+__Dad doesn't recognize__
+
+At this level, NPK is packaging your project with C/C++ compiler, to generate a Node.js native module.
+
+    npk [project path] --dad-doesnt-recognize
+
+Note: Node.js native module has machine code inside, there is no way to work on cross-platform. If you need to support several various platform for your project, it must re-package on target platform what you want.
+
 How it works
 -
 
