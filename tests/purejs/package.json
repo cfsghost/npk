@@ -4,14 +4,12 @@
   "description": "testcase with pure javascript files",
   "npk_target": {
     "app.js": {
-	  "sources": [
-	    "lib/a.js",
-	    "lib/b.js",
-	    "lib/c.js"
-	  ],
+  	  "sources": [
+  	    "lib/**/*.js"
+  	  ],
       "data": [
         "data/data.txt"
       ]
-	}
+	 }
   }
 }
