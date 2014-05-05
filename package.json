@@ -24,6 +24,7 @@
     "node": ">= 0.8.0"
   },
   "dependencies": {
+    "glob": "^3.2.9",
     "node-array": "0.0.6",
     "uglify-js": "~2.3.0"
   },
