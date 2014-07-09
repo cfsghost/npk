@@ -41,6 +41,11 @@ At this level, NPK is packaging your project with C/C++ compiler, to generate a 
 
 Note: Node.js native module has machine code inside, there is no way to work on cross-platform. If you need to support several various platform for your project, it must re-package on target platform what you want.
 
+Note for Windows Users
+-
+
+Generating Node.js native module requires C/C++ compiler and Python development. You must install Visual Studio(Express version is fine) and Python 2.7(NOT 3.x) before using "Dad doesn' recognize" option.
+
 How it works
 -
 
