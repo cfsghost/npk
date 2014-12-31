@@ -7,39 +7,47 @@ Usage
 -
 
 Install NPK globally via NPM:
+```
+npm install npk -g
+```
 
-    npm install npk -g
+Using command to pack your project:
+```
+npk tests/purejs/
+```
 
-Using command to package your project:
+After packaging, NPK will create a new folder `out` for package. You can find out the package in there:
+```
+tests/purejs/out/app.js/
+```
 
-    npk tests/purejs/
-
-Then you can find out the package in there:
-
-    tests/purejs/out/app.js/
-
-You can run packaged application directly:
-
-    node tests/purejs/out/app.js/app.js
+Finally, you can run packaged application directly:
+```
+node tests/purejs/out/app.js/app.js
+```
 
 Three levels for packaging
 -
 
-__Remove Mock-up (default)__
+NPK has special and funny options for three levels for packaging your project.
 
-    npk [project path]
+__Remove Mock-up (default)__
+```
+npk [project path]
+```
 
 __Mom doesn't recognize__
-
-    npk [project path] --mom-doesnt-recognize
-
+```
+npk [project path] --mom-doesnt-recognize
+```
 __Dad doesn't recognize__
 
 At this level, NPK is packaging your project with C/C++ compiler, to generate a Node.js native module.
+```
+npk [project path] --dad-doesnt-recognize
+```
 
-    npk [project path] --dad-doesnt-recognize
-
-Note: Node.js native module has machine code inside, there is no way to work on cross-platform. If you need to support several various platform for your project, it must re-package on target platform what you want.
+Note that the third level will attempt to compile all things with machine code then saving as a binary file. It means packed application is not going to work on cross-platform. If you need to support several various platform for your project, it must re-package you application on specific platform what you want.
 
 Note for Windows Users
 -
