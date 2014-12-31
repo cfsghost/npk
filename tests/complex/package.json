@@ -1,0 +1,13 @@
+{
+  "name": "complex",
+  "version": "0.0.1",
+  "description": "testcase with pure javascript files",
+  "npk_target": {
+    "app.js": {
+  	  "sources": [
+	    "lib/main.js",
+  	    "lib/**/*.js"
+  	  ]
+	 }
+  }
+}
