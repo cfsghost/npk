@@ -3,6 +3,10 @@ NPK
 
 Node.js packaging utility to bundle javascript and resource files.
 
+[![NPM](https://nodei.co/npm/npk.png)](https://nodei.co/npm/npk/)
+
+[![Build Status](http://img.shields.io/travis/cfsghost/npk.svg?style=flat)](https://travis-ci.org/cfsghost/npk)
+
 Usage
 -
 
